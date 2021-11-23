@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body> 
+        <header class="header"> <h1 id="title" class="text-cenetr">Portfolio Survey</h1>
+          <p id="description"> Let us know how we did!</p>
+        </header>
+          
+          <hr>
+          <form id="survey-form">
+            <!--Name-->
+              <div class="form">
+                <label for="Name" id="name-label">Name</label>
+                  <input type="name" id="name" placeholder="Enter your name" required/>
+                </div>
+              
+            <!--EMAIL-->
+            <div class="form">
+                 <label for="Email" id="email-label">Email</label>
+                  <input type="email" id="email" placeholder="Enter your email" required/>
+              </div>
+            
+            <!--Age-->
+            <div class="form">
+                <label for="number" id="number-label">Age<span class="optional">(optional)</label>
+                <input type="number" id="number" min="18" max="99" placeholder="Age"/>
+                  
+                  <!--Dropdown-->
+             <div class="role">
+               <label for="role" id="dropdown"> What would your experience level be in this career? </label>
+               <select name="role" id="dropdown">
+                 <option placeholder="Select an option" value="intern">Select an option</option>
+                  <option value="intern">Intern</option>
+                 <option value="entry">Entry</option>
+                  <option value="junior">Junior </option>
+                 <option value="senior">Senior</option>
+                 <option value="other">Other</option>
+               </select>
+               </div>
+                  
+              <!--Ratio-->
+                 <div class="form">
+                   <label> Would you recommend this survey to a friend?</label>
+                   <label for="option-1">
+                     <input type="radio" id="option-1" value="yes" name="recommend">Yes</input>
+                    </label>
+                     
+                    <label for="option-2">
+                     <input type="radio" id="option-2" value="no"name="recommend">No</input>
+                    </label>
+                      
+                    <label for="option-3">
+                     <input type="radio" id="option-3" value="maybe"name="recommend">Maybe</input>
+                    </label>
+                      </div>
+          <!---Checkboxes--->
+               <div class="form">
+                 <label>Languages you'd like to see more of<small>(Check all that apply)</small>
+                   </label>
+                 <label for="input-1">
+                   <input type="checkbox" name="input" value="c
+    ++">c++</input></label>               </label>
+                <label for="input-2">
+                   <input type="checkbox" name="input" value="python">python</input></label>                </label>
+                     <label for="input-3">
+                   <input type="checkbox" name="input" value="react">React</input></label>                </label>
+                      <label for="input-4">
+                   <input type="checkbox" name="input" value="java" >Java</input>
+            </label>                
+        </label>
+                  
+             </div>
+    
+             <!--Comments-->
+            <div class="form">
+                <label for="comment">Any comments or suggestions list them below😊</label>
+            <textarea class="input-textarea"name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+            
+         <div class="form">
+            <button type="submit" id="submit" value="submit-button">submit
+            </button>
+        </form>
+    <hr>
+</body>
+</html>
+
+  
